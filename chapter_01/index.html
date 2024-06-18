@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- Basic HTML -->
+<body>
+    <!-- Static HTML  -->
+    <div id = "root">
+        <h1>Hi...using static HTML</h1>
+    </div>
+
+    <!-- Using JS -->
+    <div id = "root2">
+        <h2>_____________________________</h2>
+    </div>
+    <script>
+        const heading = document.createElement("h1")
+        heading.innerHTML = "Hello World using JS"
+
+        const r2 = document.getElementById("root2")
+        r2.appendChild(heading)
+    </script>
+</body>
+</html>
